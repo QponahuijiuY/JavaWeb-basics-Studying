@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>com.study.example.HelloWorldServlet</servlet-class>
+        <!--设置servlet在web应用启动时就加载-->
+        <load-on-startup>1</load-on-startup>
+        <!--设置的参数-->
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </servlet>
+
+    <context-param>
+        <param-name>companyName</param-name>
+        <param-value>tyut</param-value>
+    </context-param>
+    <context-param>
+        <param-name>address</param-name>
+        <param-value>shanxi</param-value>
+    </context-param>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/helloWorldServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
