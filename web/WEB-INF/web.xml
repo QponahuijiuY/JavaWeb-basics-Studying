@@ -5,8 +5,8 @@
          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
     <servlet>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <servlet-class>com.study.example.HelloWorldServlet</servlet-class>
+        <servlet-name>HelloWorldServlet02</servlet-name>
+        <servlet-class>com.study.example.HelloWorldServlet02</servlet-class>
         <!--设置servlet在web应用启动时就加载-->
         <load-on-startup>1</load-on-startup>
         <!--设置的参数-->
@@ -15,18 +15,16 @@
             <param-value>UTF-8</param-value>
         </init-param>
     </servlet>
-
     <context-param>
-        <param-name>companyName</param-name>
-        <param-value>tyut</param-value>
+        <param-name>college</param-name>
+        <param-value>TYUT</param-value>
     </context-param>
     <context-param>
         <param-name>address</param-name>
         <param-value>shanxi</param-value>
     </context-param>
-
     <servlet-mapping>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <url-pattern>/helloWorldServlet</url-pattern>
+        <servlet-name>HelloWorldServlet02</servlet-name>
+        <url-pattern>/helloWorldServlet02</url-pattern>
     </servlet-mapping>
 </web-app>

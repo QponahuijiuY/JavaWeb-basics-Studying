@@ -12,7 +12,7 @@
   </head>
   <body>
 <p>用户登陆</p>
-<form action="/helloWorldServlet">
+<form action="/webprojects/helloWorldServlet02">
   账号:<input type="text" name="name"><br>
   密码:<input type="password" name="pwd"><br>
   爱好:<input type="checkbox" name="hobby" value="sing">唱歌
