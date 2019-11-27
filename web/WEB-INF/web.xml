@@ -5,8 +5,8 @@
          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
     <servlet>
-        <servlet-name>HelloWorldServlet02</servlet-name>
-        <servlet-class>com.study.example.HelloWorldServlet02</servlet-class>
+        <servlet-name>HelloWorldServlet06</servlet-name>
+        <servlet-class>com.study.example.HelloWorldServlet06</servlet-class>
         <!--设置servlet在web应用启动时就加载-->
         <load-on-startup>1</load-on-startup>
         <!--设置的参数-->
@@ -23,8 +23,9 @@
         <param-name>address</param-name>
         <param-value>shanxi</param-value>
     </context-param>
+
     <servlet-mapping>
-        <servlet-name>HelloWorldServlet02</servlet-name>
-        <url-pattern>/helloWorldServlet02</url-pattern>
+        <servlet-name>HelloWorldServlet06</servlet-name>
+        <url-pattern>/helloWorldServlet06</url-pattern>
     </servlet-mapping>
 </web-app>
